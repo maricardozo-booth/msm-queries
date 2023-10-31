@@ -9,13 +9,5 @@ class DirectorsController < ApplicationController
     @the_director = matching_records.at(0)
     render({ :template => "director_templates/details"})
   end
-
-  def eldest
-    render({ :template => "director_templates/eldest"})
-  end
-
-  def youngest
-    render({ :template => "director_templates/youngest"})
-  end
   
 end

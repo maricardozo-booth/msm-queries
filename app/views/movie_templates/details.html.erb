@@ -20,7 +20,7 @@
 <dd>
 <% matching_records = Director.where({ :id => @the_movie.director_id}) %>
 <% the_director = matching_records.at(0) %>
-<% the_director.name %>
+<%= the_director.name %>
 </dd>
 
 <dt>Created at</dt>
